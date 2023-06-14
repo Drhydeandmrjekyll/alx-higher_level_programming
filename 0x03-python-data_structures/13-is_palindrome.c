@@ -15,7 +15,7 @@ int is_palindrome(listint_t **head);
  */
 listint_t *reverse_listint(listint_t **head)
 {
-	istint_t *node = *head, *next, *prev = NULL;
+	istint_t *node = *head,*next,*prev = NULL;
 	while (node)
 	{
 		next = node->next;
