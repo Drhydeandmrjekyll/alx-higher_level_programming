@@ -2,6 +2,7 @@
 # 2-matrix_divided.py
 """Defines a matrix division function."""
 
+
 def matrix_divided(matrix, div):
     """Divide all elements of a matrix.
 
@@ -19,7 +20,7 @@ def matrix_divided(matrix, div):
     if (not isinstance(matrix, list) or matrix == [] or
             not all(isinstance(row, list) for row in matrix) or
             not all((isinstance(ele, int) or isinstance(ele, float))
-                for ele in [num for row in matrix for num in row])):
+                    for ele in [num for row in matrix for num in row])):
         raise TypeError("matrix must be a matrix (list of lists) of "
                         "integers/floats")
 
