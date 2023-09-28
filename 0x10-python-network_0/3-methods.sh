@@ -1,4 +1,5 @@
 #!/bin/bash
-# Script sends DELETE request to URL provided as first argument using curl,
-curl -sX DELETE "$1"
+# This script sends OPTIONS request to URL and displays allowed HTTP methods.
+
+curl -sI -X OPTIONS "$1" | grep "Allow" | cut -d ' ' -f 2-
 
