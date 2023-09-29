@@ -21,9 +21,9 @@ def fetch_url_data(url):
 
             # Print information
             print("Body response:")
-            print(f"    - type: {type(content)}")
-            print(f"    - content: {content}")
-            print(f"    - utf8 content: {utf8_content}")
+            print(f"\t- type: {type(content)}")
+            print(f"\t- content: {content}")
+            print(f"\t- utf8 content: {utf8_content}")
     except Exception as e:
         print(f"Error: {e}")
 
