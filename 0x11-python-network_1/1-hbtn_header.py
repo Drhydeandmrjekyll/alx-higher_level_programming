@@ -6,6 +6,7 @@ Fetches X-Request-Id variable from header of URL response.
 import urllib.request
 import sys
 
+
 def fetch_x_request_id(url):
     """
     Fetch X-Request-Id variable from header of URL response.
@@ -26,11 +27,12 @@ def fetch_x_request_id(url):
     except Exception as e:
         print(f"Error: {e}")
 
+
 if __name__ == "__main__":
     # Check if URL is provided as command-line argument
     if len(sys.argv) != 2:
         print("Usage: ./1-hbtn_header.py <URL>")
         sys.exit(1)
-    
+
     url = sys.argv[1]
     fetch_x_request_id(url)
