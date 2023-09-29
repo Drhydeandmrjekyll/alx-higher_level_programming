@@ -31,4 +31,3 @@ def fetch_url_data(url):
 if __name__ == "__main__":
     url = "https://alx-intranet.hbtn.io/status"
     fetch_url_data(url)
-
