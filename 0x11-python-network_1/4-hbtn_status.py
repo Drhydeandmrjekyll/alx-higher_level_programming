@@ -19,8 +19,8 @@ def fetch_url_data(url):
 
         # Print response body
         print("Body response:")
-        print(f"    - type: {type(response.text)}")
-        print(f"    - content: {response.text}")
+        print(f"\t- type: {type(response.text)}")
+        print(f"\t- content: {response.text}")
     except requests.exceptions.RequestException as e:
         print(f"Error: {e}")
 
