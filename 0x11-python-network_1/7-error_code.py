@@ -7,6 +7,7 @@ If HTTP status code is greater than or equal to 400, it prints error message.
 import requests
 import sys
 
+
 def fetch_url(url):
     """
     Fetches URL and handles HTTP status codes.
@@ -24,6 +25,7 @@ def fetch_url(url):
             print(response.text)
     except requests.exceptions.RequestException as e:
         print(f"Request error: {e}")
+
 
 if __name__ == "__main__":
     url = sys.argv[1]  # URL provided as first command-line argument
